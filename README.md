@@ -1,76 +1,78 @@
 Video-to-Text Transcription
 
-Este proyecto convierte un archivo de video a audio y luego transcribe el audio usando el modelo **Whisper** de OpenAI.
+This project converts a video file to audio and then transcribes the audio using OpenAI's **Whisper** model.
 
-## Requisitos
+## Requirements
 
-Este proyecto requiere las siguientes bibliotecas de Python:
+This project requires the following Python libraries:
 
-- **torch**: Para trabajar con modelos de aprendizaje profundo, como Whisper.
-- **whisper**: El modelo de transcripción de audio a texto de OpenAI.
-- **numpy**: Para la manipulación de arrays y cálculos matemáticos.
-- **soundfile**: Para la lectura y escritura de archivos de audio.
-- **json**: Para la manipulación de datos en formato JSON.
-- **subprocess**: Para ejecutar comandos del sistema, como FFmpeg.
+- **torch**: For working with deep learning models, like Whisper.
+- **whisper**: OpenAI's audio-to-text transcription model.
+- **numpy**: For array manipulation and mathematical calculations.
+- **soundfile**: For reading and writing audio files.
+- **json**: For handling JSON data.
+- **subprocess**: For running system commands, like FFmpeg.
 
-### Paquetes de Python
+### Python Packages
 
-Los paquetes de Python necesarios se pueden instalar usando `pip`:
+The required Python packages can be installed using pip:
 
-- `torch`
-- `whisper`
-- `numpy`
-- `soundfile`
+- torch
+- whisper
+- numpy
+- soundfile
 
-## Instalación
+## Installation
 
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/video-to-text-transcription.git
-   ```
+1. Clone this repository:
+   
+bash
+   git clone https://github.com/your-username/video-to-text-transcription.git
 
-   ```bash
+   
+bash
    cd video-to-text-transcription
-   ```
 
-2. Instala las dependencias:
-   ```bash
+
+2. Install the dependencies:
+   
+bash
    pip install -r requirements.txt
-   ```
+
    
-Uso
+Usage
 
-1. Convertir un video a audio
+1. Convert a video to audio
    
-Este paso convierte un archivo de video (por ejemplo, en formato MP4) a un archivo de audio MP3, utilizando FFmpeg.
+This step converts a video file (e.g., in MP4 format) to an MP3 audio file using FFmpeg.
 
-Asegúrate de que tu archivo de video esté disponible en la ruta especificada en el script src/convert_video_to_audio.py.
+Make sure your video file is available at the path specified in the script src/convert_video_to_audio.py.
 
-Para realizar la conversión, ejecuta el siguiente comando:
+To perform the conversion, run the following command:
 
-```bash
-python src/convert_video_to_audio.py
-```
+bash
+python convert_video_to_audio.py
 
-Este comando generará un archivo de audio MP3 con la misma duración y contenido que el video original.
 
-2. Transcribir el audio a texto
+This command will generate an MP3 audio file with the same duration and content as the original video.
+
+2. Transcribe the audio to text
    
-Una vez convertido el video a audio, el siguiente paso es transcribir el audio a texto utilizando el modelo Whisper de OpenAI.
+Once the video is converted to audio, the next step is to transcribe the audio to text using OpenAI's Whisper model.
 
-Asegúrate de que tu archivo de audio MP3 esté disponible en la ruta especificada en el script src/transcribe_audio.py.
+Make sure your MP3 audio file is available at the path specified in the script src/transcribe_audio.py.
 
-Para transcribir el audio, ejecuta el siguiente comando:
+To transcribe the audio, run the following command:
 
-```bash
-python src/transcribe_audio.py
-```
-
-Esto generará un archivo JSON con la transcripción y los segmentos de audio, donde se indicarán los tiempos de inicio y fin de cada segmento junto con el texto transcrito.
+bash
+python transcribe_audio.py
 
 
-Contribuciones
-¡Las contribuciones son bienvenidas! Si tienes alguna mejora o corrección, siéntete libre de hacer un pull request.
+This will generate a JSON file with the transcription and audio segments, where the start and end times of each segment will be indicated along with the transcribed text.
 
-Licencia
-Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
+
+Contributions
+Contributions are welcome! If you have any improvements or fixes, feel free to make a pull request.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
