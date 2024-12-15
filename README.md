@@ -1,4 +1,4 @@
-Video-to-Text Transcription
+# Video-to-Text Transcription
 
 This project converts a video file to audio and then transcribes the audio using OpenAI's **Whisper** model.
 
@@ -24,7 +24,7 @@ The required Python packages can be installed using pip:
 
 ## Installation
 
-1. Clone this repository:
+**1. Clone this repository:**
    
 ```bash
    git clone https://github.com/your-username/video-to-text-transcription.git
@@ -34,7 +34,7 @@ The required Python packages can be installed using pip:
    cd video-to-text-transcription
 ```
 
-2. Install the dependencies:
+**2. Install the dependencies:**
    
 ```bash
    pip install -r requirements.txt
@@ -42,7 +42,7 @@ The required Python packages can be installed using pip:
    
 ## Usage
 
-1. Convert a video to audio
+**1. Convert a video to audio**
    
 This step converts a video file (e.g., in MP4 format) to an MP3 audio file using FFmpeg.
 
@@ -56,7 +56,7 @@ python convert_video_to_audio.py
 
 This command will generate an MP3 audio file with the same duration and content as the original video.
 
-2. Transcribe the audio to text
+**2. Transcribe the audio to text**
    
 Once the video is converted to audio, the next step is to transcribe the audio to text using OpenAI's Whisper model.
 
