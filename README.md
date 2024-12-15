@@ -26,19 +26,19 @@ The required Python packages can be installed using pip:
 
 1. Clone this repository:
    
-bash
+```bash
    git clone https://github.com/your-username/video-to-text-transcription.git
-
+```
    
-bash
+```bash
    cd video-to-text-transcription
-
+```
 
 2. Install the dependencies:
    
-bash
+```bash
    pip install -r requirements.txt
-
+```
    
 Usage
 
@@ -50,9 +50,9 @@ Make sure your video file is available at the path specified in the script src/c
 
 To perform the conversion, run the following command:
 
-bash
+```bash
 python convert_video_to_audio.py
-
+```
 
 This command will generate an MP3 audio file with the same duration and content as the original video.
 
@@ -64,9 +64,9 @@ Make sure your MP3 audio file is available at the path specified in the script s
 
 To transcribe the audio, run the following command:
 
-bash
+```bash
 python transcribe_audio.py
-
+```
 
 This will generate a JSON file with the transcription and audio segments, where the start and end times of each segment will be indicated along with the transcribed text.
 
