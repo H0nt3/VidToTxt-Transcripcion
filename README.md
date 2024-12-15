@@ -40,7 +40,7 @@ The required Python packages can be installed using pip:
    pip install -r requirements.txt
 ```
    
-Usage
+## Usage
 
 1. Convert a video to audio
    
@@ -71,8 +71,10 @@ python transcribe_audio.py
 This will generate a JSON file with the transcription and audio segments, where the start and end times of each segment will be indicated along with the transcribed text.
 
 
-Contributions
+### Contributions
+
 Contributions are welcome! If you have any improvements or fixes, feel free to make a pull request.
 
-License
+### License
+
 This project is licensed under the MIT License. See the LICENSE file for more details.
