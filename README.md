@@ -4,13 +4,14 @@ Este proyecto convierte un archivo de video a audio y luego transcribe el audio 
 
 ## Requisitos
 
-- Python 3.7 o superior
-- FFmpeg
-- PyTorch
-- Whisper (de OpenAI)
-- SoundFile
-- NumPy
-- Subprocess
+Este proyecto requiere las siguientes bibliotecas de Python:
+
+- **torch**: Para trabajar con modelos de aprendizaje profundo, como Whisper.
+- **whisper**: El modelo de transcripción de audio a texto de OpenAI.
+- **numpy**: Para la manipulación de arrays y cálculos matemáticos.
+- **soundfile**: Para la lectura y escritura de archivos de audio.
+- **json**: Para la manipulación de datos en formato JSON.
+- **subprocess**: Para ejecutar comandos del sistema, como FFmpeg.
 
 ### Paquetes de Python
 
