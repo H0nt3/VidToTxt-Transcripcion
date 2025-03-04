@@ -1,80 +1,59 @@
-# Video-to-Text Transcription
+# Transcripcion Video a Texto
 
-This project converts a video file to audio and then transcribes the audio using OpenAI's **Whisper** model.
+Este proyecto convierte un archivo de video a audio y luego transcribe el audio usando el modelo **Whisper** de OpenAI.
 
-## Requirements
+## Requisitos
 
-This project requires the following Python libraries:
+Este proyecto requiere las siguientes bibliotecas de Python:
 
-- **torch**: For working with deep learning models, like Whisper.
-- **whisper**: OpenAI's audio-to-text transcription model.
-- **numpy**: For array manipulation and mathematical calculations.
-- **soundfile**: For reading and writing audio files.
-- **json**: For handling JSON data.
-- **subprocess**: For running system commands, like FFmpeg.
+- **torch**: Para trabajar con modelos de aprendizaje profundo, como Whisper.
+- **whisper**: Modelo de transcripción de audio a texto de OpenAI.
+- **numpy**: Para manipulación de arrays y cálculos matemáticos.
+- **soundfile**: Para leer y escribir archivos de audio.
+- **json**: Para manejar datos JSON.
+- **subprocess**: Para ejecutar comandos del sistema, como FFmpeg.
 
-### Python Packages
+### Instalación de Paquetes de Python
 
-The required Python packages can be installed using pip:
+Los paquetes de Python necesarios se pueden instalar usando pip:
 
 - torch
 - whisper
 - numpy
 - soundfile
 
-## Installation
+## Instalación
 
-**1. Clone this repository:**
-   
+**1. Clona este repositorio:**
+
 ```bash
    git clone https://github.com/your-username/video-to-text-transcription.git
 ```
-   
+
 ```bash
    cd video-to-text-transcription
 ```
 
-**2. Install the dependencies:**
-   
+**2. Instala las dependencias:**
+
 ```bash
    pip install -r requirements.txt
 ```
-   
-## Usage
 
-**1. Convert a video to audio**
-   
-This step converts a video file (e.g., in MP4 format) to an MP3 audio file using FFmpeg.
+## Uso
 
-Make sure your video file is available at the path specified in the script src/convert_video_to_audio.py.
+**1. Ejecuta el script principal**
 
-To perform the conversion, run the following command:
+Este script pedirá al usuario la ruta del archivo de video, realizará la conversión y la transcripción.
 
 ```bash
-python convert_video_to_audio.py
+python main.py
 ```
 
-This command will generate an MP3 audio file with the same duration and content as the original video.
+### Contribuciones
 
-**2. Transcribe the audio to text**
-   
-Once the video is converted to audio, the next step is to transcribe the audio to text using OpenAI's Whisper model.
+¡Las contribuciones son bienvenidas! Si tienes mejoras o correcciones, no dudes en hacer un pull request.
 
-Make sure your MP3 audio file is available at the path specified in the script src/transcribe_audio.py.
+### Licencia
 
-To transcribe the audio, run the following command:
-
-```bash
-python transcribe_audio.py
-```
-
-This will generate a JSON file with the transcription and audio segments, where the start and end times of each segment will be indicated along with the transcribed text.
-
-
-### Contributions
-
-Contributions are welcome! If you have any improvements or fixes, feel free to make a pull request.
-
-### License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
