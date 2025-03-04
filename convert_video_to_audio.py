@@ -1,26 +1,16 @@
+import sys
 import subprocess
 
-# Input video file path
-video_file = "/path/to/your/video.mp4"
+def convert_video_to_audio(video_path, audio_path):
+    command = f"ffmpeg -i {video_path} {audio_path}"
+    subprocess.run(command, shell=True, check=True)
 
-# Output audio file path
-audio_file = "/path/to/your/audio.mp3"
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Uso: python convert_video_to_audio.py <ruta_video> <ruta_audio>")
+        sys.exit(1)
 
-# FFmpeg command for conversion
-command = [
-    "ffmpeg",
-    "-i", video_file,       # Input file
-    "-vn",                  # Disable video processing
-    "-ar", "16000",         # Audio sample rate (Hz)
-    "-ac", "1",             # Audio channel (mono)
-    "-b:a", "48k",          # Audio bitrate
-    "-y",                   # Overwrite the output file if it exists
-    audio_file              # Output file
-]
-
-# Run the FFmpeg command
-try:
-    subprocess.run(command, check=True)
-    print(f"File successfully converted: {audio_file}")
-except subprocess.CalledProcessError as e:
-    print(f"Error converting the file: {e}")
+    video_path = sys.argv[1]
+    audio_path = sys.argv[2]
+    convert_video_to_audio(video_path, audio_path)
+    
