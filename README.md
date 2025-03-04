@@ -27,11 +27,11 @@ Los paquetes de Python necesarios se pueden instalar usando pip:
 **1. Clona este repositorio:**
 
 ```bash
-   git clone https://github.com/your-username/video-to-text-transcription.git
+   git clone https://github.com/H0nt3/VidToTxt-Transcripcion.git
 ```
 
 ```bash
-   cd video-to-text-transcription
+   cd VidToTxt-Transcripcion
 ```
 
 **2. Instala las dependencias:**
